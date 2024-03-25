@@ -35,7 +35,7 @@ export default function BrandModal({ open, handleClose, info, setInfo }) {
       aria-labelledby="modal-modal-title"
       aria-describedby="modal-modal-description">
       <Box sx={modalStyle}>
-        {/* stillendirme özelliklerini birkaç modal da kullandığımız için aynı özellikleri tekrar tekrar yazmak yerine ortak bir alana yani globalsStyle içerisine taşımış olduk. */}
+       
         <Formik
           initialValues={info} //!nitialValuesa üst componentten gelen info stateini verdik. İnputlarımızdakl name attributeları ile Yup daki keyleri aynı tanımladık.
           // validationSchema={brandSchema}//* eğer validasyon yapmak istemezsek bunlara ihtiyacımız yok.

@@ -13,7 +13,7 @@ const ProductModal = ({ open, handleClose, info, setInfo }) => {
 
   const handleChange = (e) => {
     // console.log(e.target)
-    setInfo({ ...info, [e.target.name]: e.target.value }); // selecten ötürü id propertysini kullanamadık sadece name propertysini kullanabiliyoruz.
+    setInfo({ ...info, [e.target.name]: e.target.value }); 
   };
 
   const handleSubmit = (e) => {
