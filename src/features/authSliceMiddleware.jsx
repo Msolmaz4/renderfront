@@ -31,7 +31,7 @@ export const registerAsync = createAsyncThunk(
     console.log(values)
     try {
       const { data } = await axios.post(
-        `https://renderapi-pdl3.onrender.com//users/`,
+        `https://renderapi-pdl3.onrender.com/users/`,
         values
       );
       toastSuccessNotify("Register performed");
@@ -49,7 +49,7 @@ export const logoutAsync = createAsyncThunk(
   async (navigate, { dispatch, getState }) => {
     const { token } = getState().auth; // storedan tokeni okuduk
     try {
-      await axios.get(`https://renderapi-pdl3.onrender.com//auth/logout/`, {
+      await axios.get(`https://renderapi-pdl3.onrender.com/auth/logout/`, {
         headers: {
           Authorization: `Token ${token}`,
         },
